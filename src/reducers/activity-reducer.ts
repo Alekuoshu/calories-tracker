@@ -45,6 +45,9 @@ export const activityReducer = (
             }
 
         case 'set-activeId':
+
+            window.scrollTo(0, 0)
+
             return {
                 ...state,
                 activeId: action.payload.id
